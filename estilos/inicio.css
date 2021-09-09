@@ -1,0 +1,243 @@
+  .menu_contorno {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 16em;
+    width: 1000px;
+    position: relative;
+    top: 100px;
+    left: 300px;
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    border-radius: 20px;
+  }
+  
+  .fondo{
+    background-image: url(../imagenes/dfp-alquiler.jpg);
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    background-position: 100%;
+  }
+  .menu_contorno > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .menu_interior {
+    display: flex;
+    background-color: #eceeef;
+    margin-right: 600px;
+    border-radius: 20px 20px 0px 0px;
+    margin-left: 20px;
+  }
+  
+  .menu_interior > ul > li > a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  
+  .menu_interior > ul > li {
+    position: relative;
+    list-style: none;
+    padding-left: 0px;
+    display: inline-block;
+  }
+  
+  .menu_item {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .menu_interior li a:active {
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: underline #faa909 3px;
+    font-weight: bold;
+  }
+  
+  #compra, #alquiler {
+    border-right: solid gray 1px;
+  }
+  
+  .menu_opciones {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  select {
+    background: white;
+    border: none white;
+    font-size: 16px;
+    height: 50px;
+    padding: 10px 30px;
+    width: 250px;
+    border-radius: 0px 0px 0px 20px;
+    border-right: solid gray 1px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  .button > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .opcion {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  input {
+    border: none white;
+  }
+  
+  .button_ayuda {
+    position: absolute;
+    top: 620px;
+    left: 80%;
+    background-color: rgb(62, 0, 90);
+    width: 200px;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .button_ayuda > a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .cuerpo_contenedor {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 17px;
+  }
+  
+  .button_propiedades {
+    width: 180px;
+    height: 50px;
+    background-color: #ff5e00;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .button_propiedades > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .flex-container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  
+  .flex-container > div {
+    background-color: #fff;
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    padding: 15px;
+  }
+  .flex-container > div > h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  
+  .flex-container > div > img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .button_guias {
+    width: 150px;
+    height: 40px;
+    background-color: #ff5e00;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .button_guias > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .contenido_bajo {
+    display: flex;
+    background-color: #f3f7f8;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .contenido_secciones {
+    display: flex;
+  }
+  
+  .contenido_secciones > div {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    text-align: left;
+    line-height: 25px;
+    padding: 15px;
+    margin-right: 40px;
+  }
+  
+  .contenido_secciones > div > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+  }
+  .contenido_secciones > div > p {
+    line-height: 3px;
+  }
+  .contenido_secciones > div > div > p > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+  .opciones > p {
+    margin: 0px;
+    
+  }
+  .opciones > p > a {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #masVentas, #menosVentas, #masCompra, #menosCompra, #masAlquiler, #menosAlquiler, #masZona, #menosZona {
+      font-weight: bold;
+  }
+  
+  
