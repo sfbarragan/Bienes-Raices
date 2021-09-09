@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/principal.css" />
+    <script src="JS/principal.js"></script>
+
+    <title>Propiedades en Ecuador</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="menu_contorno">
+        <h1>Encuentra tu lugar</h1>
+        <div class="menu_interior">
+          <ul>
+            <li class="menu_item" id="alquiler" ><a href="#" onclick="cambiarAlquiler()">Alquiler</a></li>
+            <li class="menu_item" id="compra" ><a href="#" onclick="cambiarCompra()">Compra</a></li>
+            <li class="menu_item" id="proyectos" ><a href="#" onclick="cambiarProyectos()"> Proyectos</a></li>
+          </ul>
+        </div>
+        <div class="menu_opciones">
+            <select name="opciones" required>
+            <option selected="selected" value="">Departamento</option>
+            <option value="casa" class="opcion">Casa</option>
+            <option value="suite" class="opcion">Suite</option>  
+            <option value="terreno/lote" class="opcion">Terreno / Lote</option>  
+            <option value="oficina_comercial" class="opcion">Oficina Comercial</option>  
+            <option value="local_comercial" class="opcion">Local Comercial</option>  
+            <option value="hacienda-quinta" class="opcion">Hacienda-Quinta</option>  
+            <option value="bodega-galpon" class="opcion">Bodega-Galpón</option>  
+            <option value="todos" class="opcion">Todos</option>
+            <input
+            maxlength="50"
+            name="nombre"
+            required
+            size="70"
+            type="text"
+            class="borde"
+            placeholder="Ingrese ubicación o una caracteristica (ejemplo:pileta)"
+          />    
+          <button class="button"><a href="compra.html">Buscar</a></button>
+        </div>
+       
+      </div>
+      <div class="ayuda">
+        <button class="button_ayuda"><img src="imagenes/xmag_search_find_export_locate_5984.png" alt="imagen buscar" width="20px" height="20px"><a href="#">¿Podemos ayudarlo?</a></button>
+    </div>
+    </header>
+
+    <div class="cuerpo_contenedor">
+      <img src="imagenes/3986698-appartment-plan-scheme-icon_112263.png" alt="imagen_edificio">
+      <h1>Revisa las propiedades que bajaron de <br> precio</h1>
+      <button class="button_propiedades" > <a href='compra.html'>Ver Propiedades </a></button>
+    </div>
+
+    <section>
+      <div class="flex-container">
+          <div>
+              <img src="imagenes/help-image-buy.jpg" alt="imagen compra" >
+              <h3>¿Qué necesito para comprar?</h3>
+              <button class="button_guias"><a href="https://www.plusvalia.com/noticias/actualidad/guia-para-comprar-ecuador/" target="_blank">Guía de Compra</a></button>
+          </div>
+          <div>
+              <img src="imagenes/help-image-rent.jpg" alt="imagen alquiler">
+              <h3>¿Qué necesito para alquilar?</h3>
+              <button class="button_guias"><a href="https://www.plusvalia.com/noticias/actualidad/guia-para-alquillar-ecuador/" target="_blank">Guía de Alquiler</a></button>
+          </div>
+          <div>
+              <img src="imagenes/help-image-sell.jpg" alt="imagene venta">
+              <h3> ¿Qué necesito para vender?</h3>
+              <button class="button_guias"><a href="https://www.plusvalia.com/noticias/actualidad/guia-para-vender-ecuador/" target="_blank">Guía de Venta</a></button>
+          </div>  
+        </div>
+  </section>
+
+  <div>
+    <div class="contenido_bajo" id="cont">
+      <div class="contenido_secciones">
+        <div>
+          <h3>Tipos de inmuebles populares</h3>
+          <div class="opciones">
+            <p>
+              <a href="compra.html">Casas en Venta</a> <br>
+              <a href="compra.html">Casas en Alquiler</a> <br>
+              <a href="compra.html">Departamentos en Venta</a> <br>
+              <a href="compra.html">Terrenos en Venta</a> <br>
+              <a href="#" onclick="vermasPolulares('mas'); tamañoMasPopulares();" id="masVentas">Ver mas</a></p>
+            <p id="desplegar1" style="display: none;"><a href="compra.html">Departamentos en Alquiler</a><br>
+              <a href="compra.html">Oficinas comerciales en Alquiler</a> <br>
+              <a href="compra.html">Proyectos</a> <br>
+              <a href="compra.html">Dueño Directo</a><br>
+              <a href="#" onclick="vermasPolulares('menos'); tamañoMenosPopulares();" id="menosVentas">Ver menos</a>
+            </p>
+          </div> 
+        </div>
+        <div>
+         <h3>Propiedades en venta</h3> 
+         <div class="opciones">
+          <p>
+            <a href="compra.html">Departamentos en venta: Quito</a> <br>
+            <a href="compra.html">Departamentos en venta: Guayaquil</a> <br>
+            <a href="compra.html">Departamentos en venta: Cuenca</a> <br>
+            <a href="compra.html">Departamentos en venta: Salinas</a> <br>
+            <a href="#" onclick="vermasVenta('mas'); tamañoMasVentas();" id="masCompra">Ver mas</a></p>
+          <p id="desplegar2" style="display: none;"><a href="compra.html">Departamentos en venta: Manta</a><br>
+            <a href="compra.html">Departamentos en venta: Riobamba</a> <br>
+            <a href="compra.html">Departamentos en venta: Punta Blanca</a> <br>
+            <a href="compra.html">Departamentos en venta: Same</a><br>
+            <a href="compra.html">Departamentos en venta: Playas</a><br>
+            <a href="compra.html">Departamentos en venta: Ambato</a><br>
+            <a href="compra.html">Departamentos en venta: Machala</a><br>
+            <a href="compra.html">Departamentos en venta: Ibarra</a><br>
+            <a href="compra.html">Departamentos en venta: Baños de Agua Santa</a><br>
+            <a href="compra.html">Departamentos en venta: Atacames</a><br>
+            <a href="compra.html">Departamentos en venta: Montanita</a><br>
+            <a href="compra.html">Departamentos en venta: Ruta del Sol</a><br>
+            <a href="compra.html">Casas en venta: Quito</a><br>
+            <a href="compra.html">Casas en venta: Guayaquil</a><br>
+            <a href="compra.html">Casas en venta: Cuenca</a><br>
+            <a href="compra.html">Casas en venta: Salinas</a><br>
+            <a href="compra.html">Casas en venta: Riobamba</a><br>
+            <a href="compra.html">Casas en venta: Manta</a><br>
+            <a href="compra.html">Casas en venta: Ibarra</a><br>
+            <a href="compra.html">Casas en venta: Ambato</a><br>
+            <a href="compra.html">Casas en venta: Playas</a> <br>
+            <a href="compra.html">Casas en venta: Cotacachi</a> <br>
+            <a href="compra.html">Casas en venta: Machala</a><br>
+            <a href="compra.html">Casas en venta: Punta Blanca</a><br>
+            <a href="compra.html">Casas en venta: Latacunga</a><br>
+            <a href="compra.html">Casas en venta: Portoviejo</a><br>
+            <a href="compra.html">Casas en venta: Guayllabamba</a><br>
+            <a href="compra.html">Casas en venta: Ballenita</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Quito</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Guayaquil</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Cuenca</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Manta</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Salinas</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Daule</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Durán</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Playas</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Atacames</a><br>
+            <a href="compra.html">Bienes raíces y propiedades en venta: Riobamba</a><br>
+            <a href="#" onclick="vermasVenta('menos'); tamañoMenosVentas();" id="menosCompra">Ver menos</a>
+          </p>
+        </div> 
+        </div>
+        <div>
+         <h3>Propiedades en alquiler</h3> 
+         <div class="opciones">
+          <p>
+            <a href="#">Departamentos en alquiler: Quito</a> <br>
+            <a href="#">Departamentos en alquiler: Guayaquil</a> <br>
+            <a href="#">Departamentos en alquiler: Cuenca</a> <br>
+            <a href="#">Departamentos en alquiler: Salinas</a> <br>
+            <a href="#" onclick="vermasAlquiler('mas'); tamañoMasAlquiler();" id="masAlquiler">Ver mas</a>
+          </p>
+          <p id="desplegar3" style="display: none;"><a href="#">Departamentos en venta: Manta</a><br>
+            <a href="#">Departamentos en alquiler: Manta</a> <br>
+            <a href="#">Departamentos en alquiler: Ambato</a> <br>
+            <a href="#">Departamentos en alquiler: Ibarra</a><br>
+            <a href="#">Departamentos en alquiler: Playas</a><br>
+            <a href="#">Departamentos en alquiler: Ambato</a><br>
+            <a href="#">Departamentos en alquiler: Machala</a><br>
+            <a href="#">Departamentos en alquiler: Ibarra</a><br>
+            <a href="#">Departamentos en alquiler: Baños de Agua Santa</a><br>
+            <a href="#">Departamentos en alquiler: Atacames</a><br>
+            <a href="#">Departamentos en alquiler: Montanita</a><br>
+            <a href="#">Departamentos en alquiler: Ruta del Sol</a><br>
+            <a href="#">Casas en alquiler: Quito</a><br>
+            <a href="#">Casas en alquiler: Guayaquil</a><br>
+            <a href="#">Casas en alquiler: Cuenca</a><br>
+            <a href="#">Casas en alquiler: Salinas</a><br>
+            <a href="#">Casas en alquiler: Riobamba</a><br>
+            <a href="#">Casas en alquiler: Manta</a><br>
+            <a href="#">Casas en alquiler: Ibarra</a><br>
+            <a href="#">Casas en alquiler: Ambato</a><br>
+            <a href="#">Casas en alquiler: Playas</a> <br>
+            <a href="#">Casas en alquiler: Cotacachi</a> <br>
+            <a href="#">Casas en alquiler: Machala</a><br>
+            <a href="#">Casas en alquiler: Punta Blanca</a><br>
+            <a href="#">Casas en alquiler: Latacunga</a><br>
+            <a href="#">Casas en alquiler: Portoviejo</a><br>
+            <a href="#">Casas en alquiler: Guayllabamba</a><br>
+            <a href="#">Casas en alquiler: Ballenita</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Quito</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Guayaquil</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Cuenca</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Manta</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Salinas</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Daule</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Durán</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Playas</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Atacames</a><br>
+            <a href="#">Bienes raíces y propiedades en alquiler: Riobamba</a><br>
+            <a href="#" onclick="vermasAlquiler('menos'); tamañoMenosAlquiler();" id="menosAlquiler">Ver menos</a>
+          </p>
+          
+        </div> 
+        </div>
+        <div>
+          <h3>Zonas más populares</h3>
+          <div class="opciones">
+            <p>
+              <a href="#">Quito</a> <br>
+              <a href="#">Guayaquil</a> <br>
+              <a href="#">Cuenca</a> <br>
+              <a href="#">Manta</a> <br>
+              <a href="#" onclick="vermasZonas('mas'); tamañoMasZonas();" id="masZona">Ver mas</a></p>
+            <p id="desplegar4" style="display: none;"><a href="compra.html">Salinas</a><br>
+              <a href="#">Durán</a> <br>
+              <a href="#">Daule</a> <br>
+              <a href="#">Playas</a><br>
+              <a href="#">Atacames</a><br>
+              <a href="#">Riobamba</a><br>
+              <a href="#">Ruta del Sol</a><br>
+              <a href="#">Santa Elena</a><br>
+              <a href="#">Machala</a><br>
+              <a href="#">Punta Blanca</a><br>
+              <a href="#">Ibarra</a><br>
+              <a href="#">Portoviejo</a><br>
+              <a href="#">Santo Domingo</a><br>
+              <a href="#">Guayllabamba</a><br>
+              <a href="#">Cotacachi</a><br>
+              <a href="#">Esmeraldas</a><br>
+              <a href="#" onclick="vermasZonas('menos'); tamañoMenosZonas();" id="menosZona">Ver menos</a>
+            </p>
+          </div> 
+        </div>
+      </div>
+  </div>
+
+  </body>
+</html>
+
+
