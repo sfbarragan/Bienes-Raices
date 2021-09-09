@@ -1,0 +1,465 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.multiselect{
+    width: 200px;
+    position:relative;
+}
+.multiselectPrecios {
+    width: 200px;
+    position:relative;
+}
+
+.selectBox{
+    position: relative;
+}
+.selectBoxPrecios{
+    position: relative;
+    
+}
+
+.selectBox select {
+    width: 100%;
+}
+.selectBoxPrecios select {
+    width: 100%;
+}
+
+.overSelect, .overSelectPrecios{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes, #precios {
+    display: block;
+    border: 1px #dadada solid;
+    position:absolute;
+    width:100%;
+    background-color:white;
+    box-sizing: border-box;
+    overflow-y:auto;
+    max-height:65px;
+    color: black;
+}
+#checkboxes.hide, #precios.hidePrecios {
+   visibility: hidden;
+}
+
+#checkboxes label, #precios label {
+    display: block;
+}
+
+#direc{
+    border-left: 1px solid black;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+#cuadroContenido #iconosC{
+    display:inline-block;
+    }
+#cuadroContenido{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap:nowrap
+    
+}
+#contactarBoton{
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* NAV*/
+#nav {
+    width: 100%;
+    background-color:rgb(104, 39, 104);
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 0%;
+    
+}
+
+#nav ul {
+    list-style: none;
+    text-decoration: none;
+    width: 200px;
+}
+
+#nav > ul > li {
+   
+    float: left;
+}
+
+#nav > ul > li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+    text-decoration: none;
+    width: 40px;
+    margin: 0 auto;
+   
+}
+
+
+#nav >ul li a:hover {
+    color:  white;
+    
+}
+/*aside 2 */
+#baños ul, #estac ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    background-color: white;
+    border: 2px gray solid;
+    border-radius: 7px;
+}
+
+#baños li, #estac li {
+    float: left;
+}
+
+#baños li a, #estac li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding:14px 14px;
+    margin: 0;
+    text-decoration: none;
+}
+
+#baños li a:hover:not(.active), #estac li a:hover:not(.active) {
+    background-color: orangered;
+}
+
+.sidebar2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: left;
+    
+    flex-wrap: wrap;
+    margin: 5px;
+}
+.sidebar2 div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+ .radioB input {
+     width: 50px;
+ }
+
+#enviar{
+    width: 60px;
+    border-radius: 30px;
+    background-color: rgb(255, 69, 0);
+    border-color: papayawhip;
+    color: papayawhip;
+    margin-top: 10px;
+}
+
+/**/
+  .grid {
+           display: grid;
+            grid-template-columns: [x0] 380px [x1] 1fr [x2] 1fr [x3];
+            grid-template-rows:  [y1] 1fr [y2] 1fr [y3] ;
+            grid-gap: 5px 20px;
+            
+            
+          
+            }
+           
+                
+                .sidebar {
+                background: rgb(112, 59, 112);
+                grid-column: x0 / x1;
+                grid-row: y1/y2;
+                color: white;
+                border-radius: 15px;
+                height: 400px;
+                
+               
+                }
+                .sidebar2 {
+                    background: white;
+                    grid-column: x0 / x1;
+                    grid-row: y2/y3;
+                    color: black;
+                    border-radius: 15px;
+                    height: 680px;
+                   
+                   
+                    }
+                
+                .content {
+                    background: white;
+                    grid-column: x1 / x3;
+                    grid-row: y1 / y3;
+                    display: grid;
+                    row-gap: 10px;
+                    border-color: black;      
+                    height: 400px;
+                    }
+                    
+#mapa{
+    background-color: orangered;
+    color: white;
+}
+
+.ws{
+    width: 100%;
+    background: rgba(39,210,103,255);
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 20px;
+    border-color: rgba(136,148,155,255);
+    margin: 0% 0 3%;
+}
+.icon{
+    width: 250px;
+    height: 10px;
+}
+.contenedor_nf{
+    display: grid;
+    grid-template-columns: repeat(4,120px);
+    
+    width: 450px;
+    height: 50px;
+    font-size: 14px;
+    color: #5f6d72;
+}
+.contenedor_nf .item{
+    margin: 1px;
+    
+}
+
+#cuadro1, #cuadro2, #cuadro3, #cuadro4, #cuadro5, #cuadro6, #cuadro7{
+    display: grid;
+    row-gap: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color:gray;
+    border-width: thin;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] ;
+    
+    grid-gap: 5px 20px;
+    background-color: rgba(210, 244, 245, 0.658);
+   
+    
+}
+
+#cuadro1 .slide, #cuadro2 .slide2, #cuadro3 .slide3, #cuadro4 .slide, #cuadro5 .slide, #cuadro6 .slide, #cuadro7 .slide{ 
+ 
+    grid-column: x0/x1;
+}
+#cuadro1 #cuadroContenido, #cuadro2 #cuadroContenido, #cuadro3 #cuadroContenido, #cuadro4 #cuadroContenido, #cuadro5 #cuadroContenido, 
+#cuadro6 #cuadroContenido,#cuadro7 #cuadroContenido {
+    grid-column: x1/x2;
+}
+.sidebar div{
+    display: block;
+    width: 95%;
+    margin: 8px;
+
+}
+/*imagenes slider*/
+#cuadro1 .slide, #cuadro2 .slide2, #cuadro3 .slide3, #cuadro4 .slide, #cuadro5 .slide, #cuadro6 .slide, #cuadro7 .slide{
+    position: relative;
+   
+    margin: 0px;
+    background-color:skyblue;
+}
+
+#cuadro1 .slide-inner, #cuadro2 .slide-inner2, #cuadro3 .slide-inner3, #cuadro4 .slide-inner, 
+#cuadro5 .slide-inner, #cuadro6 .slide-inner, #cuadro7 .slide-inner    {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 300px + 3em);
+}
+
+#cuadro1 .slide-open:checked + .slide-item, #cuadro2 .slide-open2:checked + .slide-item2, #cuadro3 .slide-open3:checked + .slide-item3,
+#cuadro4 .slide-open:checked + .slide-item, #cuadro5 .slide-open:checked + .slide-item,  #cuadro6 .slide-open:checked + .slide-item,
+#cuadro7 .slide-open:checked + .slide-item{
+    position: static;
+    opacity: 1;
+}
+
+#cuadro1 .slide-item, #cuadro2 .slide-item2, #cuadro3 .slide-item3, #cuadro4 .slide-item, #cuadro5 .slide-item,
+#cuadro6 .slide-item, #cuadro7 .slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 1 ease-out;
+    transition: opacity 1 ease-out;
+}
+
+#cuadro1 .slide-item img, #cuadro2 .slide-item2 img, #cuadro3 .slide-item3 img, #cuadro4 .slide-item img, #cuadro5 .slide-item img,
+#cuadro6 .slide-item img,  #cuadro7 .slide-item img {
+    display: block;
+    height:auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+#cuadro1 .slide-control, #cuadro2 .slide-control2, #cuadro3 .slide-control3, #cuadro4 .slide-control, 
+#cuadro5 .slide-control, #cuadro6 .slide-control, #cuadro7 .slide-control{
+    background: rgba(0, 0, 0, 0.01);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position:absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+#cuadro1 .slide-control.prev, #cuadro2 .slide-control.prev, #cuadro3 .slide-control3.prev, 
+#cuadro4 .slide-control.prev, #cuadro5 .slide-control.prev, #cuadro6 .slide-control.prev , 
+#cuadro7 .slide-control.prev  {
+    left: 2%;
+}
+
+#cuadro1 .slide-control.next, #cuadro2 .slide-control2.next, #cuadro3 .slide-control3.next, #cuadro4 .slide-control.next,
+#cuadro5 .slide-control.next, #cuadro6 .slide-control.next, #cuadro7 .slide-control.next{
+    right: 2%;
+}
+
+#cuadro1 .slide-control:hover, #cuadro2 .slide-control2:hover, #cuadro3 .slide-control3:hover, 
+#cuadro4 .slide-control:hover,  #cuadro5 .slide-control:hover,  #cuadro6 .slide-control:hover,
+#cuadro7 .slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color:#aaaaaa;
+}
+
+#cuadro1 #slide-1:checked ~ .control-1,
+#cuadro1 #slide-2:checked ~ .control-2,
+#cuadro1 #slide-3:checked ~ .control-3,
+#cuadro2 #slide-4:checked ~ .control-4,
+#cuadro2 #slide-5:checked ~ .control-5,
+#cuadro2 #slide-6:checked ~ .control-6,
+#cuadro3 #slide-7:checked ~ .control-7,
+#cuadro3 #slide-8:checked ~ .control-8,
+#cuadro3 #slide-9:checked ~ .control-9,
+#cuadro4 #slide-10:checked ~ .control-10,
+#cuadro4 #slide-11:checked ~ .control-11,
+#cuadro4 #slide-12:checked ~ .control-12,
+#cuadro5 #slide-13:checked ~ .control-13,
+#cuadro5 #slide-14:checked ~ .control-14,
+#cuadro5 #slide-15:checked ~ .control-15,
+#cuadro6 #slide-16:checked ~ .control-16,
+#cuadro6 #slide-17:checked ~ .control-17,
+#cuadro6 #slide-18:checked ~ .control-18,
+#cuadro7 #slide-19:checked ~ .control-19,
+#cuadro7 #slide-20:checked ~ .control-20,
+#cuadro7 #slide-21:checked ~ .control-21
+ {
+    display: block;
+}
+
+#cuadro1 .slide-indicador, #cuadro2 .slide-indicador2,#cuadro3 .slide-indicador3,#cuadro4 .slide-indicador,
+#cuadro5 .slide-indicador, #cuadro6 .slide-indicador , #cuadro7 .slide-indicador  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+#cuadro1 .slide-indicador li, #cuadro2 .slide-indicador2 li, #cuadro3 .slide-indicador3 li,
+#cuadro4 .slide-indicador li, #cuadro5 .slide-indicador li,  #cuadro6 .slide-indicador li, 
+#cuadro7 .slide-indicador li  {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#cuadro1 .slide-circulo, #cuadro2 .slide-circulo2, #cuadro3 .slide-circulo3, 
+#cuadro4 .slide-circulo, #cuadro5 .slide-circulo, #cuadro6 .slide-circulo, 
+#cuadro7 .slide-circulo {
+    color: #f8faf9;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+#cuadro1 .slide-circulo:hover, #cuadro2 .slide-circulo2:hover, #cuadro3 .slide-circulo3:hover,
+#cuadro4 .slide-circulo:hover, #cuadro5 .slide-circulo:hover, #cuadro6 .slide-circulo:hover,
+#cuadro7 .slide-circulo:hover   {
+    color: #aaaaaa;
+}
+
+#cuadro1 #slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#cuadro1 #slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#cuadro1 #slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#cuadro2  #slide-4:checked ~ .control-4 ~ .slide-indicador2 li:nth-child(4) .slide-circulo2,
+#cuadro2  #slide-5:checked ~ .control-5 ~ .slide-indicador2 li:nth-child(5) .slide-circulo2,
+#cuadro2  #slide-6:checked ~ .control-6 ~ .slide-indicador2 li:nth-child(6) .slide-circulo2,
+#cuadro3  #slide-7:checked ~ .control-7 ~ .slide-indicador3 li:nth-child(7) .slide-circulo3,
+#cuadro3  #slide-8:checked ~ .control-8 ~ .slide-indicador3 li:nth-child(8) .slide-circulo3,
+#cuadro3  #slide-9:checked ~ .control-9 ~ .slide-indicador3 li:nth-child(9) .slide-circulo3
+#cuadro4  #slide-10:checked ~ .control-10 ~ .slide-indicador3 li:nth-child(10) .slide-circulo4,
+#cuadro4  #slide-11:checked ~ .control-11 ~ .slide-indicador3 li:nth-child(11) .slide-circulo4,
+#cuadro4  #slide-12:checked ~ .control-12 ~ .slide-indicador3 li:nth-child(12) .slide-circulo4,
+#cuadro5  #slide-13:checked ~ .control-13 ~ .slide-indicador3 li:nth-child(13) .slide-circulo,
+#cuadro5  #slide-14:checked ~ .control-14 ~ .slide-indicador3 li:nth-child(14) .slide-circulo,
+#cuadro5  #slide-15:checked ~ .control-15 ~ .slide-indicador3 li:nth-child(15) .slide-circulo,
+#cuadro6  #slide-16:checked ~ .control-16 ~ .slide-indicador3 li:nth-child(16) .slide-circulo,
+#cuadro6  #slide-17:checked ~ .control-17 ~ .slide-indicador3 li:nth-child(17) .slide-circulo,
+#cuadro6  #slide-18:checked ~ .control-18 ~ .slide-indicador3 li:nth-child(18) .slide-circulo,
+#cuadro7  #slide-19:checked ~ .control-19 ~ .slide-indicador3 li:nth-child(19) .slide-circulo,
+#cuadro7  #slide-20:checked ~ .control-20 ~ .slide-indicador3 li:nth-child(20) .slide-circulo,
+#cuadro7  #slide-21:checked ~ .control-21 ~ .slide-indicador3 li:nth-child(21) .slide-circulo
+ {
+    color: #cccecf;
+}
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+footer{
+    margin-top: 1200px;
+    position: relative;
+}
