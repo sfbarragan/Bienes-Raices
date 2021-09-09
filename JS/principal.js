@@ -1,14 +1,15 @@
 
+
 function cambiarAlquiler() {
-	document.getElementById('header').style.backgroundImage='url(imagenes/dfp-alquiler.jpg)';
+	document.getElementById('fondo').style.backgroundImage='url(imagenes/dfp-alquiler.jpg)';
 }
 
 function cambiarCompra() {
-	document.getElementById('header').style.backgroundImage='url(imagenes/dfp-venta.jpg)';
+	document.getElementById('fondo').style.backgroundImage='url(imagenes/dfp-venta.jpg)';
 }
 
 function cambiarProyectos() {
-	document.getElementById('header').style.backgroundImage='url(imagenes/dfp-emprendimiento.jpg)';
+	document.getElementById('fondo').style.backgroundImage='url(imagenes/dfp-emprendimiento.jpg)';
 }
 
 
@@ -68,7 +69,7 @@ function tamañoMenosPopulares(){
 
 
 function tamañoMasVentas(){
-	document.getElementById("cont").style.height ="1500px";
+	document.getElementById("cont").style.height ="1600px";
 }
 
 function tamañoMenosVentas(){
@@ -76,7 +77,7 @@ function tamañoMenosVentas(){
 }
 
 function tamañoMasAlquiler(){
-	document.getElementById("cont").style.height ="1500px";
+	document.getElementById("cont").style.height ="1600px";
 }
 
 function tamañoMenosAlquiler(){
