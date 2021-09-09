@@ -1,22 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/compra.css">
+    <link rel="stylesheet" href="estilos/fontello.css">
+    <link rel="stylesheet" href="estilos/principal.css" />
 
-
-    <title>Document</title>
+    <title>Compra</title>
 </head>
 
 <body>
-    
-    <div class="grid">
-        <div class="header">
-
+    <header class="main-header" id="main">
+        <ul class="menu">
+          <a href="index.html"><img src="imagenes/logo-plusvalia.svg" alt="logo"></a>
+          <li class="menu__item" data-sub="comprar"><a href="#">Comprar</a></li>
+          <li class="menu__item" data-sub="alquilar"><a href="#">Alquilar</a></li>
+          <li class="menu__item" data-sub="temporal"><a href="#">Temporal</a></li>
+          <li class="menu__item" data-sub="proyectos"><a href="#">Proyectos</a></li>
+          <button class="publicarBtn"><a href="#">Publicar</a></button>
+          <button class="ingresarBtn"><a href="login.html">Ingresar</a></button>
+        </ul>
+        <div class="dropdown-holder">
+          <div class="dropdown__arrow"></div>
+          <div class="dropdown__bg">
+            <div class="dropdown__bg-bottom"></div>
+          </div>
+          <div class="dropdown__wrap">
+            <div class="dropdown-menu" id="comprar" data-sub="comprar">
+              <div class="dropdown-menu__content">
+                <div class="top-section">
+                  <div class="col-2">
+                    <div class="col-2-1">
+                      <h2 class="menu-title">Estado</h2>
+                      <ul>
+                        <li><a href="compra.html">Pichincha</a></li>
+                        <li><a href="compra.html">Guayas</a></li>
+                        <li><a href="compra.html">Manabí</a></li>
+                        <li><a href="compra.html">Azuay</a></li>
+                        <li><a href="compra.html">Santa Elena</a></li>
+                        <li><a href="compra.html">Esmeraldas</a></li>
+                        <li><a href="compra.html">Imbabura</a></li>
+                        <li><a href="compra.html">El Oro</a></li>
+                        <li><a href="compra.html">Chimborazo</a></li>
+                        <li><a href="compra.html">Santo Domingo</a></li>
+                        <li><a href="compra.html">Tungurahua</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="menu-title">Tipo de propiedad</h2>
+                      <ul>
+                        <li><a href="compra.html">Casa</a></li>
+                        <li><a href="compra.html">Departamento</a></li>
+                        <li><a href="compra.html">Terreno/Lote</a></li>
+                        <li><a href="compra.html">Oficina comercial</a></li>
+                        <li><a href="compra.html">Suite</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="menu-title">Habitaciones</h2>
+                      <ul>
+                        <li><a href="compra.html">3 habitaciones</a></li>
+                        <li><a href="compra.html">2 habitaciones</a></li>
+                        <li><a href="compra.html">4 habitaciones</a></li>
+                        <li><a href="compra.html">5 o más habitaciones</a></li>
+                        <li><a href="compra.html">1 habitación</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="menu-title">Características</h2>
+                      <ul>
+                        <li><a href="compra.html">1 o más baños</a></li>
+                        <li><a href="compra.html">2 o más baños </a></li>
+                        <li><a href="compra.html">1 o más estacionamientos</a></li>
+                        <li><a href="compra.html">2 o más estacionamientos</a></li>
+                        <li><a href="compra.html">A estrenar</a></li>
+                        <li><a href="compra.html">Hasta 10 años</a></li>
+                        <li><a href="compra.html">Bodega(s)</a></li>
+                        <li><a href="compra.html">Iluminación</a></li>
+                        <li><a href="compra.html">Jardín(s)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-section info">
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-menu" id="alquilar" data-sub="alquilar">
+            <div class="dropdown-menu__content">
+              <div class="top-section">
+                <div class="col-2">
+                  <div class="col-2-2">
+                    <h2 class="menu-title">Estado</h2>
+                    <ul>
+                      <li><a href="compra.html">Pichincha</a></li>
+                      <li><a href="compra.html">Guayas</a></li>
+                      <li><a href="compra.html">Manabí</a></li>
+                      <li><a href="compra.html">Azuay</a></li>
+                      <li><a href="compra.html">Santa Elena</a></li>
+                      <li><a href="compra.html">El Oro</a></li>
+                      <li><a href="compra.html">Esmeraldas</a></li>
+                      <li><a href="compra.html">Santo Domingo</a></li>
+                      <li><a href="compra.html">Tungurahua</a></li>
+                      <li><a href="compra.html">Imbabura</a></li>
+                      <li><a href="compra.html">Chimborazo</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="menu-title">Tipo de propiedad</h2>
+                    <ul>
+                      <li><a href="compra.html">Departamento</a></li>
+                      <li><a href="compra.html">Oficina comercial</a></li>
+                      <li><a href="compra.html">Suite</a></li>
+                      <li><a href="compra.html">Casa</a></li>
+                      <li><a href="compra.html">Local comercial</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="menu-title">Habitaciones</h2>
+                    <ul>
+                      <li><a href="compra.html">3 habitaciones</a></li>
+                      <li><a href="compra.html">1 habitaciones</a></li>
+                      <li><a href="compra.html">2 habitaciones</a></li>
+                      <li><a href="compra.html">4 habitaciones</a></li>
+                      <li><a href="compra.html">5 o más habitaciones</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="menu-title">Características</h2>
+                    <ul>
+                      <li><a href="compra.html">1 o más baños</a></li>
+                      <li><a href="compra.html">2 o más baños </a></li>
+                      <li><a href="compra.html">1 o más estacionamientos</a></li>
+                      <li><a href="compra.html">2 o más estacionamientos</a></li>
+                      <li><a href="compra.html">Hasta 10 años</a></li>
+                      <li><a href="compra.html">Hasta 50 años</a></li>
+                      <li><a href="compra.html">Hasta 10 años</a></li>
+                      <li><a href="compra.html">Bodega(s)</a></li>
+                      <li><a href="compra.html">Guardianía/Seguridad privada</a></li>
+                      <li><a href="compra.html">Ascensor(es)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-section info">
+              </div>
+            </div>
+          </div>
+  
+          <div class="dropdown-menu" id="temporal" data-sub="temporal">
+            <div class="dropdown-menu__content">
+              <div class="top-section">
+                <div class="col-2">
+                  <div class="col-2-3">
+                    <h2 class="menu-title">Estado</h2>
+                    <ul>
+                      <li><a href="compra.html">Santa Elena</a></li>
+                      <li><a href="compra.html">Guayas</a></li>
+                      <li><a href="compra.html">Manabí</a></li>
+                      <li><a href="compra.html">Pichincha</a></li>
+                      <li><a href="compra.html">Esmeraldas</a></li>
+                      <li><a href="compra.html">Azuay</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="menu-title">Tipo de propiedad</h2>
+                    <ul>
+                      <li><a href="compra.html">Departamento</a></li>
+                      <li><a href="compra.html">Casa</a></li>
+                      <li><a href="compra.html">Suite</a></li>
+                      <li><a href="compra.html">Quinta Vacacional </a></li>
+                      <li><a href="compra.html">Terreno/Lote</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="menu-title">Habitaciones</h2>
+                    <ul>
+                      <li><a href="compra.html">3 habitaciones</a></li>
+                      <li><a href="compra.html">2 habitaciones</a></li>
+                      <li><a href="compra.html">1 habitación</a></li>
+                      <li><a href="compra.html">4 habitaciones</a></li>
+                      <li><a href="compra.html">5 o más habitaciones</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="menu-title">Características</h2>
+                    <ul>
+                      <li><a href="compra.html">1 o más baños</a></li>
+                      <li><a href="compra.html">2 o más baños </a></li>
+                      <li><a href="compra.html">1 o más estacionamientos</a></li>
+                      <li><a href="compra.html">Sin estacionamientos</a></li>
+                      <li><a href="compra.html">Hasta 10 años</a></li>
+                      <li><a href="compra.html">Hasta 5 años</a></li>
+                      <li><a href="compra.html">Closets</a></li>
+                      <li><a href="compra.html">Aire acondicionado</a></li>
+                      <li><a href="compra.html">Amueblado/a</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-section info">
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-menu" data-sub="proyectos">
+            <div class="dropdown-menu__content">
+              <div class="top-section">
+                <h2 class="menu-title">Etapa</h2>
+                    <ul>
+                      <li><a href="compra.html">En planos</a></li>
+                      <li><a href="compra.html">En construcción</a></li>
+                      <li><a href="compra.html">Pre-venta</a></li>
+                      <li><a href="compra.html">Venta</a></li>
+                      <li><a href="compra.html">En cualquier etapa</a></li>
+                    </ul>
+              </div>
+              <div class="bottom-section">
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </header>
+
+    <div class="grid">
    
     <aside class="sidebar">
     
@@ -35,10 +245,10 @@
                 </ul>
             </nav>
         <div id="contenido">
-            Ubicación Buscar en línea
+        <b>   Ubicación Buscar en línea</b>
             <div> <input type="text" name="ubicacion" id="ubicacion" value="Buscar por estado o zona"> </div>
             <div> <button id="mapa"> Ver mapa</button> </div>
-            Tipo de inmueble
+        <b>   Tipo de inmueble</b>
             <div class="multiselect">
                 <div class="selectBox" onclick="mostrarCheckboxes();">
                     <select>
@@ -64,7 +274,7 @@
                     <label for="c15"><input type="checkbox" id="c15" />Quinta Vacacional</label>
                 </div>
             </div>
-            Habitaciones
+        <b>  Habitaciones </b>
 
             <div id="habitación">
                 <select name="mínimo">
@@ -89,7 +299,7 @@
                 </select>
             </div>
 
-            Precio
+        <b> Precio </b>
             <div class="multiselectPrecios">
             <div class="selectBoxPrecios" onclick="mostrarPrecios();">
                 <select>
@@ -109,15 +319,19 @@
         </div>
     </aside>
     <aside class="sidebar2">
-        Otras operaciones
-        <div>
+        
+
+    <b>   Otras operaciones </b>
+        <div class="radioB">
             
-            <input type="radio" id="op1"> <label for="op1"> Otras operaciones</label> <br>
-            <input type="radio" id="op2"> <label for="op2"> Traspaso</label> <br>
+          
             
+            <label>Otras operaciones <input type="radio" name="rec1" value="Otras operaciones"></label><br>
+            <label>Traspaso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rec1" value=" Traspaso" > </label><br>
+         
            
         </div>
-        Superfice
+    <b>  Superfice </b>
         <div>
             
             <select>
@@ -127,7 +341,7 @@
                 <option>300 metros cuadrados</option>
             </select>
         </div>
-        Baños
+    <b> Baños </b>
         <div id="baños">
             <ul>
                 <li><a href="#">1+</a></li>
@@ -137,7 +351,7 @@
                 <li><a href="#">5+</a></li>
               </ul>
         </div>
-        Estacionamientos
+      <b>  Estacionamientos</b>
         <div id="estac">
             <ul>
                 <li><a href="#">Sin</a></li>
@@ -148,15 +362,18 @@
                
               </ul>
         </div>
-        Multimedia
-        <div>
-            <input type="radio" id="opt1" value="recorrido" > <label for="opt1"> Recorrido 360</label> <br>
-            <input type="radio" id="opt2" value="recorrido2"> <label for="opt2"> Video</label> <br>
-            <input type="radio" id="opt3" value="recorrido3"> <label for="opt3"> Plano</label>
-            <option  type radio value="ja"></option>
-            
-        </div>
+    <b>  Multimedia </b>
+        <div class="radioB">
+           
+            <label>Recorrido 360<input type="radio" name="rec" value="Recorrido 360"></label><br>
+            <label>Video&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rec" value="Video" ></label><br>
+            <label>Plano&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rec" value="Plano" checked></label><br>
+            <input id="enviar" type="submit" value="Enviar">
 
+        
+
+        </div>
+    
     </aside>
 
     <main class="content">
@@ -205,18 +422,54 @@
                 Inglaterra y Amazonas s/n
              </span>
             </div>
+            <div class="contenedor_nf">
+                
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-metros"></i>
+                        46 a 107 m² 
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-habitaciones"></i>
+                        1 a 3 hab.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-baño"></i>
+                        1 a 2 baños
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-carro"></i>
+                        1 estac
+                    </div>
+                </div>
+             
+            </div>
+
              <div>
-             <a href="/propiedades/rento-local-comercial-sector-carolina-muy-amplio-con-61232169.html">
-                Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos
+             <a href="seleccion.html">
+                Sense - Sector Quicentro Shopping - Compra en Planos
                 </a>
     
             </div>
-            <div>Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos</div>
+            <div>Sense - Sector Quicentro Shopping - Compra en Planos</div>
             <hr>
-             <div><button id="contactarBoton">Contactar</button></div>
+            <div id="iconosC"> <div><button class="ws">
+                
+                <i class="icon-ws"></i>
+            </button> </div>
+        
+            <div><button id="contactarBoton">Contactar</button></div> </div>
+           </div>
            </div>
 
-        </div>
+        
         <div id="cuadro2">
            
             <div class="slide2">
@@ -262,15 +515,51 @@
                 Inglaterra y Amazonas s/n
              </span>
             </div>
+            <div class="contenedor_nf">
+                
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-metros"></i>
+                        46 a 107 m² 
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-habitaciones"></i>
+                        1 a 3 hab.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-baño"></i>
+                        1 a 2 baños
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-carro"></i>
+                        1 estac
+                    </div>
+                </div>
+             
+            </div>
+
+
              <div>
-             <a href="/propiedades/rento-local-comercial-sector-carolina-muy-amplio-con-61232169.html">
-                Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos
+             <a href="seleccion2.html">
+                Centro Corporativo Zyra - Oficinas - 6 de Diciembre y Portugal - Centro Norte
                 </a>
     
             </div>
-            <div>Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos</div>
+            <div> Centro Corporativo Zyra - Oficinas - 6 de Diciembre y Portugal - Centro Norte</div>
             <hr>
-             <div><button id="contactarBoton">Contactar</button></div>
+            <div id="iconosC"> <div><button class="ws">
+                
+                <i class="icon-ws"></i>
+            </button> </div>
+        
+            <div><button id="contactarBoton">Contactar</button></div> </div>
            </div>
 
         </div>
@@ -319,18 +608,54 @@
                 Inglaterra y Amazonas s/n
              </span>
             </div>
+            <div class="contenedor_nf">
+                
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-metros"></i>
+                        46 a 107 m² 
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-habitaciones"></i>
+                        1 a 3 hab.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-baño"></i>
+                        1 a 2 baños
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-carro"></i>
+                        1 estac
+                    </div>
+                </div>
+             
+            </div>
+
              <div>
-             <a href="/propiedades/rento-local-comercial-sector-carolina-muy-amplio-con-61232169.html">
-                Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos
+             <a href="seleccion2.html">
+                Centro Corporativo Zyra - Oficinas - 6 de Diciembre y Portugal - Centro Norte
                 </a>
     
             </div>
-            <div>Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos</div>
+            <div>Centro Corporativo Zyra - Oficinas - 6 de Diciembre y Portugal - Centro Norte</div>
             <hr>
-             <div><button id="contactarBoton">Contactar</button></div>
+            <div id="iconosC"> <div><button class="ws">
+                
+                <i class="icon-ws"></i>
+            </button> </div>
+        
+            <div><button id="contactarBoton">Contactar</button></div> </div>
+           </div>
            </div>
 
-        </div>
+        
         
         <div id="cuadro4">
            
@@ -377,6 +702,36 @@
                 Inglaterra y Amazonas s/n
              </span>
             </div>
+            <div class="contenedor_nf">
+                
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-metros"></i>
+                        46 a 107 m² 
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-habitaciones"></i>
+                        1 a 3 hab.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-baño"></i>
+                        1 a 2 baños
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-carro"></i>
+                        1 estac
+                    </div>
+                </div>
+             
+            </div>
+
              <div>
              <a href="/propiedades/rento-local-comercial-sector-carolina-muy-amplio-con-61232169.html">
                 Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos
@@ -385,10 +740,16 @@
             </div>
             <div>Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos</div>
             <hr>
-             <div><button id="contactarBoton">Contactar</button></div>
+            <div id="iconosC"> <div><button class="ws">
+                
+                <i class="icon-ws"></i>
+            </button> </div>
+        
+            <div><button id="contactarBoton">Contactar</button></div> </div>
+           </div>
            </div>
 
-        </div>
+        
         <div id="cuadro5">
            
             <div class="slide">
@@ -434,6 +795,36 @@
                 Inglaterra y Amazonas s/n
              </span>
             </div>
+            <div class="contenedor_nf">
+                
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-metros"></i>
+                        46 a 107 m² 
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-habitaciones"></i>
+                        1 a 3 hab.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-baño"></i>
+                        1 a 2 baños
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-carro"></i>
+                        1 estac
+                    </div>
+                </div>
+             
+            </div>
+
              <div>
              <a href="/propiedades/rento-local-comercial-sector-carolina-muy-amplio-con-61232169.html">
                 Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos
@@ -442,15 +833,276 @@
             </div>
             <div>Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos</div>
             <hr>
-             <div><button id="contactarBoton">Contactar</button></div>
+            <div id="iconosC"> <div><button class="ws">
+                
+                <i class="icon-ws"></i>
+            </button> </div>
+        
+            <div><button id="contactarBoton">Contactar</button></div> </div>
            </div>
-
         </div>
+         
+           <div id="cuadro6">
+           
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-16" name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <img src="imagenes/cuadro6.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-17" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="imagenes/cuadro6.1.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-18" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="imagenes/cuadro6.2.jpg">
+                    </div>
+                    <label for="slide-18" class="slide-control prev control-16">‹</label>
+                    <label for="slide-17" class="slide-control next control-16">›</label>
+                    <label for="slide-16" class="slide-control prev control-17">‹</label>
+                    <label for="slide-18" class="slide-control next control-17">›</label>
+                    <label for="slide-17" class="slide-control prev control-18">‹</label>
+                    <label for="slide-16" class="slide-control next control-18">›</label>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-16" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-17" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-18" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+           <div id="cuadroContenido">
+              <div>
+              <span> USD 2.500 </span> 
+               <span> 37%</span>
+               <span id="direc" >
+	
+                Inglaterra y Amazonas s/n
+             </span>
+            </div>
+            <div class="contenedor_nf">
+                
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-metros"></i>
+                        46 a 107 m² 
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-habitaciones"></i>
+                        1 a 3 hab.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-baño"></i>
+                        1 a 2 baños
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-carro"></i>
+                        1 estac
+                    </div>
+                </div>
+             
+            </div>
+
+             <div>
+             <a href="/propiedades/rento-local-comercial-sector-carolina-muy-amplio-con-61232169.html">
+                Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos
+                </a>
+    
+            </div>
+            <div>Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos</div>
+            <hr>
+            <div id="iconosC"> <div><button class="ws">
+                
+                <i class="icon-ws"></i>
+            </button> </div>
+        
+            <div><button id="contactarBoton">Contactar</button></div> </div>
+           </div>
+        </div>
+         
+
+           <div id="cuadro7">
+           
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-19" name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <img src="imagenes/cuadro7.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-20" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="imagenes/cuadro7.1.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-21" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="imagenes/cuadro7.2.jpg">
+                    </div>
+                    <label for="slide-21" class="slide-control prev control-19">‹</label>
+                    <label for="slide-20" class="slide-control next control-19">›</label>
+                    <label for="slide-19" class="slide-control prev control-20">‹</label>
+                    <label for="slide-21" class="slide-control next control-20">›</label>
+                    <label for="slide-20" class="slide-control prev control-21">‹</label>
+                    <label for="slide-19" class="slide-control next control-21">›</label>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-19" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-20" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-21" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+           <div id="cuadroContenido">
+              <div>
+              <span> USD 2.500 </span> 
+               <span> 37%</span>
+               <span id="direc" >
+	
+                Inglaterra y Amazonas s/n
+             </span>
+            </div>
+            <div class="contenedor_nf">
+                
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-metros"></i>
+                        46 a 107 m² 
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-habitaciones"></i>
+                        1 a 3 hab.
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-baño"></i>
+                        1 a 2 baños
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="icon-carro"></i>
+                        1 estac
+                    </div>
+                </div>
+             
+            </div>
+
+             <div>
+             <a href="/propiedades/rento-local-comercial-sector-carolina-muy-amplio-con-61232169.html">
+                Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos
+                </a>
+    
+            </div>
+            <div>Rento Local Comercial Sector Carolina Muy Amplio con Parqueaderos</div>
+            <hr>
+            <div id="iconosC"> <div><button class="ws">
+                
+                <i class="icon-ws"></i>
+            </button> </div>
+        
+            <div><button id="contactarBoton">Contactar</button></div> </div>
+           </div>
+           </div>
+           
+
+
+     
+    
         
         
     </main>
-</div>
-</body>
 
+</div>
+
+</body>
+<footer>
+    <div>
+      <div class="pie_pagina">
+        <div class="pie_pagina_secciones">
+          <div>
+            <img src="imagenes/logo-plusvalia-w.svg" alt="logo">
+            <h3>Más Plusvalia</h3>
+            <div class="opciones">
+              <p> <a href="#">Inmuebles en Ecuador</a></p>
+              <p><a href="#">Publicar tu Inmueble</a></p>
+              <p> <a href="#">Ayuda</a></p>
+              <p><a href="#">Mapa del sitio</a></p> 
+              <p> <a href="#">Publicidad</a></p>
+              <p><a href="#">Noticias</a></p> 
+            </div> 
+          </div>
+          <div>
+           <h3 class="tit">Anunciantes</h3> 
+           <div class="opciones">
+            <p>
+              <p> <a href="#">Inmobiliarias</a></p>
+              <p><a href="#">Corredores</a></p>
+              <p> <a href="#">Contructoras</a></p>
+              <p><a href="#">Mapa del sitio</a></p> 
+            </p>
+          </div> 
+          </div>
+          <div>
+           <h3 class="tit">Países</h3> 
+           <div class="opciones">
+            <p>
+              <p><a href="#">Argentina</a></p>
+              <p><a href="#">Brasil</a></p>
+              <p><a href="#">México</a></p>
+              <p><a href="#">Perú</a></p>
+              <p><a href="#">Venezuela</a></p> 
+              <p><a href="#">Panamá</a></p>  
+            </p>
+          </div> 
+          </div>
+          <div>
+            <h3 class="tit">Síguenos</h3>
+            <div class="opciones">
+                <p><a href="#"><img src="imagenes/facebook.png" alt="Facebook" height="35px"></a>
+                  <a href="#"><img src="imagenes/instagram.png" alt="instagram" height="35px"></a>
+                  <a href="#"><img src="imagenes/audio.png" alt="Youtube" height="32px"></a> 
+                </p>
+                  <h3 id = "Apps" class="tit">Apps</h3>
+                  <p><a href="#"><img src="imagenes/App-Store-ES-white.svg" alt="App-Store" height="35px"></a>
+                    <a href="#"><img src="imagenes/Google-Play-ES-white.svg" alt="google play" height="35px"></a>
+                  </p>
+                  <p>
+                    <a href="#"><img src="imagenes/appgallery-rela.svg" alt="appgallery-rela" height="35px"></a>
+                  </p>
+            </div> 
+          </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; Copyright 2021 plusvalia.com </p>
+      <p>Términos y condiciones de Uso Términos y Condiciones de Contratación Política de privacidad</p>
+
+      <p id = "Navent">Ver todas las empresas de NAVENT</p>
+    </div>
+  </footer>
 </html>
-<script src="js/javascript.js"></script>
+<script src="js/compra.js"></script>
+<script src="JS/menú.js"></script>
