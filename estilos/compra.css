@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+#cuadroContenido a{
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -96,21 +96,21 @@ a{
 #nav ul {
     list-style: none;
     text-decoration: none;
-    width: 200px;
+    width: 300px;
 }
 
 #nav > ul > li {
-   
+    width: 80px;
     float: left;
 }
 
 #nav > ul > li a {
     display: block;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
     color: gray;
     text-decoration: none;
-    width: 40px;
+    width: 50px;
     margin: 0 auto;
    
 }
@@ -180,14 +180,13 @@ a{
   .grid {
            display: grid;
             grid-template-columns: [x0] 380px [x1] 1fr [x2] 1fr [x3];
-            grid-template-rows:  [y1] 1fr [y2] 1fr [y3] ;
+            grid-template-rows:  [y1] 500px [y2] 1fr [y3] ;
             grid-gap: 5px 20px;
             
             
           
             }
-           
-                
+             
                 .sidebar {
                 background: rgb(112, 59, 112);
                 grid-column: x0 / x1;
@@ -209,14 +208,14 @@ a{
                    
                     }
                 
-                .content {
-                    background: white;
+                .contentM {
+                    background:#eceeee;
                     grid-column: x1 / x3;
                     grid-row: y1 / y3;
                     display: grid;
                     row-gap: 10px;
                     border-color: black;      
-                    height: 400px;
+                    
                     }
                     
 #mapa{
@@ -285,10 +284,11 @@ a{
 }
 /*imagenes slider*/
 #cuadro1 .slide, #cuadro2 .slide2, #cuadro3 .slide3, #cuadro4 .slide, #cuadro5 .slide, #cuadro6 .slide, #cuadro7 .slide{
-    position: relative;
+    position: inherit;
    
     margin: 0px;
-    background-color:skyblue;
+    background-color:rgb(204, 202, 202);
+    
 }
 
 #cuadro1 .slide-inner, #cuadro2 .slide-inner2, #cuadro3 .slide-inner3, #cuadro4 .slide-inner, 
@@ -460,6 +460,75 @@ a{
 }
 
 footer{
-    margin-top: 1200px;
+    margin-top: 80px;
     position: relative;
 }
+
+/*  MEDIA QUERY*/
+@media (max-width: 700px) {
+    .grid {
+        display: grid;
+         grid-template-columns: [x0] 600px [x1];
+         grid-template-rows:  [y1] 500px [y2] 540px [y3] 1fr [y4]  ;
+         grid-gap: 5px 20px;
+         
+         
+       
+         }
+          
+             .sidebar {
+             background: rgb(112, 59, 112);
+             grid-column: x0 / x1;
+             grid-row: y1/y2;
+             color: white;
+             border-radius: 15px;
+             height: 400px;
+             
+            
+             }
+             .sidebar2 {
+                 background: white;
+                 grid-column: x0 / x1;
+                 grid-row: y2/y3;
+                 color: black;
+                 border-radius: 15px;
+                 height: 680px;
+                
+                
+                 }
+             
+             .contentM {
+                 background: #eceeee;
+                 grid-column: x0 / x1;
+                 grid-row: y3 / y4;
+                 display: grid;
+                 row-gap: 10px;
+                 border-color: black;      
+                 
+                 }
+                
+                #cuadro1, #cuadro2, #cuadro3, #cuadro4, #cuadro5, #cuadro6, #cuadro7 {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: center;
+                 
+                }
+                footer{
+                    margin-top: 80px;
+                    position: relative;
+                }
+             
+                #cuadro1 .slide, #cuadro2 .slide2, #cuadro3 .slide3, #cuadro4 .slide, #cuadro5 .slide, #cuadro6 .slide, #cuadro7 .slide{ 
+ 
+                  width: 500px;
+                }
+                #cuadro1 #cuadroContenido, #cuadro2 #cuadroContenido, #cuadro3 #cuadroContenido, #cuadro4 #cuadroContenido, #cuadro5 #cuadroContenido, 
+                #cuadro6 #cuadroContenido,#cuadro7 #cuadroContenido {
+                    width: 500px;
+                }
+
+
+}
+
