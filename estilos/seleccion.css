@@ -1,12 +1,17 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    padding: 0px;
-    border: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+html{
+    height: 100%;
 }
 body{
-    margin: 0px;
-    padding: 0px;
+    width: 100px GO 
+    
 }
 .encabezado .titulo {
     font-weight: 600;
@@ -136,11 +141,11 @@ body{
 
 /* Formulario*/
 .precio{
-    width: 410px;
+    width: 420px;
     height: 580px;
     position: relative;
-    top: -45px;
-    left: 30%;
+    top: -20px;
+    left: 31%;
     background: rgba(243,246,249,255);
     padding: 10px 20px;
     box-sizing: border-box;
@@ -168,6 +173,9 @@ input, textarea{
 .checkbox{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    position: relative;
+    left: -5px;
+    width: 30px;
 
 }
 .contactar{
@@ -326,7 +334,7 @@ input, textarea{
     top: -450px;
 }
 .depa2{
-    width: 830px;
+    width: 810px;
     height: 65px;
     position: relative;
     top: -450px;
@@ -350,7 +358,7 @@ input, textarea{
 }
 .depa3{
 
-    width: 830px;
+    width: 810px;
     height: 65px;
     position: relative;
     top: -450px;
@@ -437,16 +445,6 @@ input, textarea{
     top: -550px;
     left: 50px; 
     margin-bottom: 0px;
-}
-
-@media (max-width: 480px){
-    form{
-        width: 100px;
-    }
-    .contenedor-galeria{
-        width: 100px;
-    }
-    
 }
 
 
