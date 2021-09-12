@@ -20,8 +20,8 @@ header {
   position: relative;
   padding: 0;
   transform-style: preserve3d;
-  perspective: 3000px;
-  z-index: 3;
+  perspective: 100%;
+  z-index: 2;
 }
 
 .menu {
@@ -35,6 +35,7 @@ header {
 
 .menu a:hover{
   color: orange;
+  
 }
 
 .menu a {
@@ -169,8 +170,8 @@ header {
 
 .publicarBtn{
   border: none;
-  margin-left: 500px;
-  color: whitesmoke;
+  margin-left: 20%;
+  background-color: whitesmoke;
 }
 
 .publicarBtn > a{
@@ -184,7 +185,7 @@ header {
   border-radius: 20px;
   height: 50px;
   width: 100px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .ingresarBtn > a{
@@ -362,3 +363,52 @@ body {font-family: Hind,sans-serif; background-color: white; box-sizing: border-
  #Navent{
    text-align: center;
  }
+
+ @media screen and (max-width: 980px){
+  .menu{
+    flex-direction: column;
+    -ms-flex-item-align: center;
+  }
+
+  .menu  > button {
+    flex-direction: column;
+    margin: 0%;
+  }
+  
+  .top-section{
+    flex-direction: column;
+  }
+
+  .pie_pagina{
+    height: 100%;
+  }
+  .pie_pagina_secciones{
+    flex-direction: column;
+    margin:0px;
+    padding: 0px;
+  }
+
+  .copyright{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .publicarBtn{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 20px;
+  }
+
+  .publicarBtn> a{
+    width: 100%;
+    text-align: center;
+  }
+  .ingresarBtn{
+    width: 100%;
+  }
+
+  .ingresarBtn > a{
+    width: 100%;
+    text-align: center;
+  }
+}
