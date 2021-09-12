@@ -8,11 +8,11 @@
     font-weight: bold;
 }
 .multiselect{
-    width: 200px;
+    width: 250px;
     position:relative;
 }
 .multiselectPrecios {
-    width: 200px;
+    width: 220px;
     position:relative;
 }
 
@@ -56,6 +56,9 @@
 
 #checkboxes label, #precios label {
     display: block;
+}
+#checkboxes input{
+    width: 40px;
 }
 
 #direc{
@@ -531,4 +534,3 @@ footer{
 
 
 }
-
